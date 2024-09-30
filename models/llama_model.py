@@ -2,8 +2,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 class LLaMAModel:
     def __init__(self, model_name: str = "meta-llama/Llama-2-7b-hf"):
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForCausalLM.from_pretrained(model_name)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=True)
+        self.model = AutoModelForCausalLM.from_pretrained(model_name, use_auth_token=True)
 
     def generate_response(self, prompt: str, max_length: int = 50) -> str:
         inputs = self.tokenizer(prompt, return_tensors="pt")
