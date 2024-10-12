@@ -1,0 +1,7 @@
+Next steps: 06.10.2024
+- Fix the task form
+- Integrate the task table
+- Remove the chatbot and chat history from the UI and app.
+- Improve the styling and colour of the app, and improve the dark mode
+- Introduce filtering to the task table
+- Integrate the high prio events into the calendar event scheduling
